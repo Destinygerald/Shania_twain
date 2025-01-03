@@ -4,8 +4,57 @@ import Shania from '/images/IMG_7306-removebg-preview.png'
 import Shania2 from '/images/IMG_7303.jpg'
 import Shania3 from '/images/IMG_7304.jpg'
 import { CiMenuFries } from 'react-icons/ci'
+import { BsX } from 'react-icons/bs'
+import { useState, useEffect, useRef } from 'react'
 
-function Nav () {
+function Slider ({ setSlider }) {
+
+	const ref = useRef(null)
+
+	function closeSlider () {
+		setSlider(false)
+	}
+
+	function pointerHandler (e) {
+		if (!ref.current.contains(e.target)) {
+			closeSlider()
+		}
+		return;
+	}
+
+	useEffect(() => {
+		const main = document.querySelector('.main')
+
+		if (!main) return;
+
+		main.addEventListener('pointerdown', pointerHandler)
+
+		return () => main.removeEventListener('pointerdown', pointerHandler)
+	}, [])
+
+	return (
+		<div className='slider' ref={ref}>
+			<span className='slider-exit' onClick={closeSlider}>
+				<BsX />
+			</span>
+
+			<div className='slider-cnt'>
+				<div>Home</div>
+				<div>Biography</div>
+				<div>Contact</div>
+			</div>
+
+		</div>
+	)
+}
+
+function Nav ({ setSlider }) {
+
+	function openSlider () {
+		setSlider(true)
+		console.log('Hello')
+	}
+
 	return (
 		<div className='nav'>
 			<span className='logo'>Shania Twain</span>
@@ -16,7 +65,7 @@ function Nav () {
 				<span>Contact</span>
 			</div>
 
-			<div className='nav-menu'>
+			<div className='nav-menu' onClick={openSlider}>
 				<CiMenuFries />
 			</div>
 		</div>
@@ -24,6 +73,11 @@ function Nav () {
 }
 
 function Banner () {
+
+	function handleClick () {
+		window.location = 'https://www.Shaniatwain.com'
+	}
+
 	return (
 		<div className='banner'>
 			<div className='banner-left'>
@@ -31,7 +85,7 @@ function Banner () {
 
 				<div> <div className='line' /> From Humble Beginnings to Global Stardom</div>
 
-				<button>Explore her Journey</button>
+				<button onClick={handleClick}>Explore her Journey</button>
 			</div>
 
 			<div className='banner-right'>
@@ -120,14 +174,25 @@ function Journey () {
 }
 
 export default function Page () {
+
+	const [ slider, setSlider ] = useState(false)
+
 	return (
 		<div className='main'>
-			<Nav />
+			<Nav setSlider={setSlider} />
 			<Banner />
 			<Achivements />
 			<Introduction />
 			<Biography />
 			<Journey />
+
+			{
+				slider
+				?
+				<Slider setSlider={setSlider} />
+				:
+				''
+			}
 		</div>
 	)
 }

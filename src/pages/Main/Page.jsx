@@ -233,6 +233,15 @@ function LifeExperience () {
 	)
 }
 
+
+function Footer () {
+	return (
+		<div className='footer'>
+			
+		</div>
+	)
+}
+
 export default function Page () {
 
 	const [ slider, setSlider ] = useState(false)

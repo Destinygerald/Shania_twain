@@ -114,6 +114,11 @@
 		width: 100%;
 	}
 
+	.carousel-main {
+		height: 220px;
+		width: 80%;
+	}
+
 	.carousel-main > img {
 		min-width: 100%;
 		min-height: 100%;

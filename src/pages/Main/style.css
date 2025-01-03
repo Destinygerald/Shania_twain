@@ -232,7 +232,7 @@
 .carousel-main {
 	width: 88%;
 	height: 320px;
-	background-color: grey;
+	/*background-color: grey;*/
 	overflow: hidden;
 }
 

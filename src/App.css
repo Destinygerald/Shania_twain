@@ -78,6 +78,16 @@
   font-family: Oswald;
 }
 
+@font-face {
+  src: url('/fonts/Rye/Rye-Regular.ttf');
+  font-family: Rye;
+}
+
+@font-face {
+  src: url('/fonts/Meddon/Meddon-Regular.ttf');
+  font-family: Meddon;
+}
+
 html, body, #root {
   width: 100%;
   min-height: 100vh;

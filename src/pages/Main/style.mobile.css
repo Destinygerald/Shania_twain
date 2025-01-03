@@ -4,7 +4,8 @@
 	}
 
 	.nav {
-		height: 48px;
+		height: 60px;
+		align-items: center;
 	}
 
 	.logo {
@@ -14,6 +15,12 @@
 	.nav-items {
 		gap: 12px;
 		font-size: .6rem;
+		display: none;
+	}
+
+	.nav-menu {
+		display: flex;
+		align-items: center;
 	}
 
 	.banner {
@@ -28,7 +35,7 @@
 	}
 
 	.banner-left > div:first-child {
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 		text-align: center;
 		line-height: 3.6rem;
 	}

@@ -10,13 +10,17 @@
 	align-items: flex-end;
 	padding: 0 6%;
 	width: 100%;
-	height: 60px;
+	height: 72px;
 }
 
 .logo {
-	font-family: PinyonScript;
+	font-family: Meddon;
 	font-weight: 600;
 	font-size: 1.8rem;
+}
+
+.nav-menu {
+	display: none;
 }
 
 .nav-items {
@@ -46,9 +50,9 @@
 }
 
 .banner-left > div:first-child {
-	font-size: 3.8rem;
-	font-family: PinyonScript;
-	font-weight: 800;
+	font-size: 3.6rem;
+	font-family: Rye;
+	font-weight: 400;
 }
 
 .banner-left > div:nth-child(2) {
@@ -85,9 +89,9 @@
 }
 
 .banner-right > img {
-	width: 120%;
+	width: 140%;
 	position: relative;
-	/*left: -0%;*/
+	left: -10%;
 	filter: grayscale(80%) hue-rotate( 290deg);
 	mask-image: linear-gradient(white 60%, transparent);
 	pointer-events: none;

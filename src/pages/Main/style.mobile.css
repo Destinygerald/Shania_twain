@@ -110,4 +110,12 @@
 		flex-direction: column-reverse;
 	}
 
+	.experience-txt {
+		width: 100%;
+	}
+
+	.carousel-main > img {
+		min-width: 100%;
+		min-height: 100%;
+	}
 }

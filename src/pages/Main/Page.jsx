@@ -7,6 +7,12 @@ import { CiMenuFries } from 'react-icons/ci'
 import { BsX } from 'react-icons/bs'
 import { useState, useEffect, useRef } from 'react'
 
+import Shania4 from '/images/IMG_7305.jpg'
+import Shania5 from '/images/IMG_7309.jpg'
+import Shania6 from '/images/IMG_7314.jpg'
+import Shania7 from '/images/IMG_7315.jpg'
+import Shania8 from '/images/IMG_7316.jpg'
+
 function Slider ({ setSlider }) {
 
 	const ref = useRef(null)
@@ -173,6 +179,60 @@ function Journey () {
 	)
 }
 
+function LifeExperience () {
+
+	const [ index, setIndex ] = useState(0)
+
+	const Carousel = [
+		Shania4, Shania5, Shania6, Shania7, Shania8
+	]
+
+	function rewind () {
+		if (index == 0) {
+			setIndex(Carousel.length - 1)
+			return
+		}
+
+		setIndex(slider => slider - 1)
+	}
+
+	function forward () {
+		
+		if (index == (Carousel.length - 1) ) {
+			setIndex(0)
+			return
+		}
+
+		setIndex(slider => slider + 1)
+	}
+	
+	return (
+		<div className='experience'>
+			<span> Beyond the Spotlight </span>
+
+			<div className='experience-txt'>
+				Twain’s personal life has been as inspiring as her career. Twain also overcame Lyme disease, which temporarily damaged her vocal cords, showcasing her resilience and ability to adapt.
+			</div>
+
+			<div className='carousel'>
+
+				<div className='carousel-arrow' onClick={rewind}>
+					{'<'}
+				</div>
+
+				<div className='carousel-main'>
+					<img src={Carousel[index]} />
+				</div>
+
+				<div className='carousel-arrow' onClick={forward}>
+					{'>'}
+				</div>
+			</div>
+
+		</div>
+	)
+}
+
 export default function Page () {
 
 	const [ slider, setSlider ] = useState(false)
@@ -185,6 +245,7 @@ export default function Page () {
 			<Introduction />
 			<Biography />
 			<Journey />
+			<LifeExperience />
 
 			{
 				slider

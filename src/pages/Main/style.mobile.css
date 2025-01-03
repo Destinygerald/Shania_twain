@@ -1,0 +1,68 @@
+@media (max-width: 600px) {
+	.main {
+		
+	}
+
+	.nav {
+		height: 48px;
+	}
+
+	.logo {
+		font-size: 1.2rem;
+	}
+
+	.nav-items {
+		gap: 12px;
+		font-size: .6rem;
+	}
+
+	.banner {
+		flex-direction: column;
+		gap: 28px;
+	}
+
+	.banner-left, .banner-right {
+		width: 100%;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.banner-left > div:first-child {
+		font-size: 3.2rem;
+		text-align: center;
+		line-height: 3.6rem;
+	}
+
+	.line {
+		display: none;
+	}
+
+	.achivements {
+		flex-direction: column;
+		gap: 28px;
+		padding-bottom: 80px;
+	}
+
+	.achivements-cnt {
+		width: 100%;
+	}
+
+	.biography-sect, .journey  {
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.biography-sect-img, .journey-img {
+		width: 100%;
+	}
+
+	.biography-sect-cnt, .journey-cnt {
+		width: 100%;
+		gap: 12px;
+	}
+
+	.journey {
+		flex-direction: column-reverse;
+	}
+
+}

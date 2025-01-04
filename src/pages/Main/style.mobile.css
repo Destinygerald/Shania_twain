@@ -94,16 +94,20 @@
 		position: relative;
 	}
 
+	.banner-right > img {
+		width: 120%;
+	}
+
 	.banner-extra {
 		position: absolute;
 		display: flex;
-		top: calc(100% - 322px);
+		top: calc(100% - 328px);
 		left: 25%;
 		width: 50%;
-		background-color: rgb(120, 0, 255);
-		height: 20px;
+		background-color: rgb(100, 0, 255);
+		height: 22px;
 		z-index: 1;
-		filter: blur(12px) opacity(70%);
+		filter: blur(10px) opacity(70%);
 	}
 
 	.banner-extra2 {

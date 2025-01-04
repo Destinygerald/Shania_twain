@@ -109,6 +109,7 @@ html, body, #root {
   color: rgb(48, 48, 48);
   background-color: rgb(253, 253, 253);
   font-family: Poppins;
-  --primary: #f64dce;
+  /*--primary: #f64dce;*/
+  --primary: rgb(160, 0, 255);
   --secondary: rgb(240, 240, 240) ;
 }

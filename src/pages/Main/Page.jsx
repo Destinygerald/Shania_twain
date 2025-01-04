@@ -1,6 +1,6 @@
 import './style.css'
 import './style.mobile.css'
-import Shania from '/images/IMG_7306-removebg-preview.png'
+import Shania from '/images/Shania.jpg'
 import Shania2 from '/images/IMG_7303.jpg'
 import Shania3 from '/images/IMG_7304.jpg'
 import { CiMenuFries } from 'react-icons/ci'

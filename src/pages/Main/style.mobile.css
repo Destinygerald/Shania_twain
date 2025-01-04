@@ -76,6 +76,7 @@
 	.banner {
 		flex-direction: column;
 		gap: 28px;
+		background: linear-gradient(200deg, rgb(0, 0, 0) 20%, rgb(60, 0, 255));
 		padding-top: 32px;
 	}
 
@@ -84,6 +85,13 @@
 		align-items: center;
 		gap: 16px;
 	}
+
+	.banner-right  {
+		max-height: 320px;
+		height: 320px;
+		overflow: hidden;
+	}
+
 
 	.banner-left > div:first-child {
 		font-size: 2.6rem;

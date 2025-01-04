@@ -13,6 +13,7 @@
 		height: 100vh;
 		width: 80vw;
 		box-shadow: 0 0 2px rgb(60, 60, 60, .6);
+		box-shadow: 0 0 2px rgb(255, 255, 255, .6);
 		z-index: 2;
 		top: 0;
 		padding-top: 60px;
@@ -20,7 +21,7 @@
 
 	.slider-exit {
 		position: absolute;
-		right: 40px;
+		right: 28px;
 		top: 20px;
 		font-size: 1.28rem;
 		color: white;

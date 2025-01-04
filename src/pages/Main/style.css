@@ -274,6 +274,11 @@
 	cursor: pointer;
 }
 
+.contact > div:nth-child(2) > a {
+	color: rgb(48, 48, 48);
+	text-decoration: none;
+}
+
 .contact-line {
 	position: absolute;
 	bottom: -1px;
@@ -294,6 +299,11 @@
 	color: white;
 	font-size: .88rem;
 	border-radius: 50%;
+}
+
+.contact > div:last-child > a {
+	color: white;
+	text-decoration: none;
 }
 
 .footer {

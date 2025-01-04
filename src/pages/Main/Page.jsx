@@ -243,10 +243,12 @@ function ContactUs () {
 
 
 			<div>
-				Contact us <div className='contact-line' />
+				<a href='mailto:Maverickmgts@gmail.com'>
+					Contact us <div className='contact-line' />
+				</a>
 			</div>
 
-			<div>→</div>
+			<div> <a href='mailto:Maverickmgts@gmail.com'> → </a> </div>
 		</div>
 	)
 }

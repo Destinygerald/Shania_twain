@@ -98,6 +98,9 @@ function Banner () {
 			<div className='banner-right'>
 				<img src={Shania} />
 			</div>
+
+			<div className='banner-extra' />
+			<div className='banner-extra2' />
 		</div>
 	)
 }

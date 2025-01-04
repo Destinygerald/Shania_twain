@@ -122,6 +122,25 @@
 	color: white;
 }
 
+.banner-extra, .banner-extra2 {
+	position: absolute;
+	display: flex;
+	top: 50px;
+	right: 10%;
+	width: 40%;
+	background-color: rgb(48, 48, 48);
+	height: 20px;
+	z-index: 1;
+	filter: blur(4px) opacity(100%);
+}
+
+.banner-extra2 {
+	top: 442px;
+	z-index: 2;
+	background-color: rgb(90, 0, 255);
+	/*background-color: red;	*/
+}
+
 .banner-right {
 	width: 50%;
 	overflow: hidden;

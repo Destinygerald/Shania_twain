@@ -91,6 +91,23 @@
 		max-height: 320px;
 		height: 320px;
 		overflow: hidden;
+		position: relative;
+	}
+
+	.banner-extra {
+		position: absolute;
+		display: flex;
+		top: calc(100% - 322px);
+		left: 25%;
+		width: 50%;
+		background-color: rgb(120, 0, 255);
+		height: 20px;
+		z-index: 1;
+		filter: blur(12px) opacity(70%);
+	}
+
+	.banner-extra2 {
+		display: none;
 	}
 
 

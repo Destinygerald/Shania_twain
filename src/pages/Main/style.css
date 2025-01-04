@@ -311,7 +311,7 @@
 .footer {
 	width: 100%;
 	background-color: rgb(28, 28, 28);
-	height: 200px;
+	height: 280px;
 	border-top: 1px solid rgb(120, 120, 120, .2);
 	color: white;
 	display: flex;
@@ -328,10 +328,18 @@
 	opacity: .6;
 }
 
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+}
+
 .footer-items {
 	font-size: .66rem;
 	display: flex;
-	gap: 2.8rem;
+	gap: 6rem;
 	font-weight: 600;
 	cursor: pointer;
 }
@@ -339,6 +347,24 @@
 .footer-items a {
 	color: white;
 	text-decoration: none;
+}
+
+.footer-extras {
+	display: flex;
+	gap: 4rem;
+}
+
+.footer-extras > div {
+	display: flex;
+	font-size: .72rem;
+	align-items: center;
+	gap: 6px;
+}
+
+.footer-extras > div > span:first-child {
+	display: flex;
+	align-items: center;
+	font-size: .8rem;
 }
 
 .copyright {

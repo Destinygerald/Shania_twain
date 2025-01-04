@@ -5,6 +5,8 @@ import Shania2 from '/images/IMG_7303.jpg'
 import Shania3 from '/images/IMG_7304.jpg'
 import { CiMenuFries } from 'react-icons/ci'
 import { BsX } from 'react-icons/bs'
+import { IoMail } from 'react-icons/io5'
+import { FaGlobe } from 'react-icons/fa'
 import { useState, useEffect, useRef } from 'react'
 
 import Shania4 from '/images/IMG_7305.jpg'
@@ -257,11 +259,25 @@ function Footer () {
 		<div className='footer'>
 			<div>Shania Twain</div>
 
-			<div className='footer-items'>
-				<span> <a href='#home'> Home </a> </span>
-				<span> <a href='#biography'> Biography </a> </span>
-				<span> <a href='#contact'> Contact </a> </span>
-				<span> <a href='#story'> Her Story </a> </span>
+			<div className='footer-contact'>
+				<div className='footer-items'>
+					<span> <a href='#home'> Home </a> </span>
+					<span> <a href='#biography'> Biography </a> </span>
+					<span> <a href='#contact'> Contact </a> </span>
+					<span> <a href='#story'> Her Story </a> </span>
+				</div>
+
+				<div className='footer-extras'>
+					<div>
+						<span> <IoMail /> </span>
+						<span> Maverickmgts@gmail.com </span>
+					</div>
+
+					<div>
+						<span> <FaGlobe /> </span>
+						<span> www.shania-twain.onrender.com </span>
+					</div>
+				</div>
 			</div>
 
 			<div className='copyright'>

@@ -88,6 +88,11 @@
   font-family: Meddon;
 }
 
+@font-face {
+  src: url('/fonts/NewRocker/NewRocker-Regular.ttf');
+  font-family: NewRocker;
+}
+
 html, body, #root {
   width: 100%;
   min-height: 100vh;

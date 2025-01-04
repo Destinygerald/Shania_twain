@@ -56,8 +56,10 @@
 
 .banner-left > div:first-child {
 	font-size: 3.6rem;
-	font-family: Rye;
-	font-weight: 400;
+	font-family: NewRocker;
+	font-weight: 600;
+	/*line-height: 4rem;*/
+	color: rgb(60, 60, 60);
 }
 
 .banner-left > div:nth-child(2) {

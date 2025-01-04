@@ -58,7 +58,6 @@ function Nav ({ setSlider }) {
 
 	function openSlider () {
 		setSlider(true)
-		console.log('Hello')
 	}
 
 	return (

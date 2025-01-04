@@ -76,7 +76,7 @@
 	.banner {
 		flex-direction: column;
 		gap: 28px;
-		background: linear-gradient(200deg, rgb(0, 0, 0) 20%, rgb(60, 0, 255));
+		background: linear-gradient(200deg, rgb(0, 0, 0) 30%, rgb(60, 0, 255));
 		padding-top: 32px;
 	}
 

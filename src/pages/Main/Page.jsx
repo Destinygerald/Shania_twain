@@ -45,9 +45,9 @@ function Slider ({ setSlider }) {
 			</span>
 
 			<div className='slider-cnt'>
-				<div>Home</div>
-				<div>Biography</div>
-				<div>Contact</div>
+				<div onClick={closeSlider}> <a href='#home'> Home </a> </div>
+				<div onClick={closeSlider}> <a href='#biography' > Biography </a> </div>
+				<div onClick={closeSlider}> <a href='#contact'> Contact </a> </div>
 			</div>
 
 		</div>
@@ -66,9 +66,9 @@ function Nav ({ setSlider }) {
 			<span className='logo'>Shania Twain</span>
 
 			<div className='nav-items'>
-				<span>Home</span>
-				<span>Biography</span>
-				<span>Contact</span>
+				<span> <a href='#home'> Home </a> </span>
+				<span> <a href='#biography' > Biography </a> </span>
+				<span> <a href='#contact'> Contact </a> </span>
 			</div>
 
 			<div className='nav-menu' onClick={openSlider}>
@@ -85,7 +85,7 @@ function Banner () {
 	}
 
 	return (
-		<div className='banner'>
+		<div className='banner' id='home'>
 			<div className='banner-left'>
 				<div> Shania Twain - The Queen of Country Pop </div>
 
@@ -103,7 +103,7 @@ function Banner () {
 
 function Achivements () {
 	return (
-		<div className='achivements'>
+		<div className='achivements' id='biography'>
 			<div className='achivements-cnt'>
 				<span>Album Sales</span>
 				<span> 100 Million+ </span>
@@ -138,7 +138,7 @@ function Introduction () {
 
 function Biography () {
 	return (
-		<div className='biography-sect'>
+		<div className='biography-sect' id='story'>
 			<div className='biography-sect-img'>
 				<img src={Shania2} />
 			</div>
@@ -234,10 +234,38 @@ function LifeExperience () {
 }
 
 
+function ContactUs () {
+	return (
+		<div className='contact' id='contact'>
+			<span>
+				HEARD<br /> ENOUGH? →
+			</span>
+
+
+			<div>
+				Contact us <div className='contact-line' />
+			</div>
+
+			<div>→</div>
+		</div>
+	)
+}
+
 function Footer () {
 	return (
 		<div className='footer'>
-			
+			<div>Shania Twain</div>
+
+			<div className='footer-items'>
+				<span> <a href='#home'> Home </a> </span>
+				<span> <a href='#biography'> Biography </a> </span>
+				<span> <a href='#contact'> Contact </a> </span>
+				<span> <a href='#story'> Her Story </a> </span>
+			</div>
+
+			<div className='copyright'>
+				©2025 Shania Twain. All Rights Reserved
+			</div>
 		</div>
 	)
 }
@@ -255,6 +283,8 @@ export default function Page () {
 			<Biography />
 			<Journey />
 			<LifeExperience />
+			<ContactUs />
+			<Footer />
 
 			{
 				slider

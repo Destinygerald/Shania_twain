@@ -34,6 +34,11 @@
 	cursor: pointer;
 }
 
+.nav-items > span > a {
+	color: rgb(48, 48, 48);
+	text-decoration: none;
+}
+
 .banner {
 	width: 100%;
 	padding: 40px 6%;
@@ -194,6 +199,7 @@
 .experience {
 	width: 100%;
 	padding: 40px 6%;
+	padding-bottom: 60px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -227,6 +233,10 @@
 .carousel-arrow {
 	font-size: 1.4rem;
 	cursor: pointer;
+	height: 320px;
+	display: flex;
+	align-items: center;
+	padding: 8px;
 }
 
 .carousel-main {
@@ -234,8 +244,101 @@
 	height: 320px;
 	/*background-color: grey;*/
 	overflow: hidden;
+	position: relative;
 }
 
 .carousel-main > img {
 	width: 100%;
+	position: relative;
+	top: -25%;
+}
+
+.contact {
+	width: 100%;
+	padding: 0 6%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 280px;
+}
+
+.contact > span:first-child {
+	font-size: .8rem;
+	font-weight: 600;
+}
+
+.contact > div:nth-child(2) {
+	font-size: 2.8rem;
+	font-weight: 600;
+	position: relative;
+	cursor: pointer;
+}
+
+.contact-line {
+	position: absolute;
+	bottom: -1px;
+	left: 5%;
+	width: 90%;
+	height: 2px;
+	background-color: var(--primary);
+}
+
+.contact > div:last-child {
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	color: white;
+	font-size: .88rem;
+	border-radius: 50%;
+}
+
+.footer {
+	width: 100%;
+	background-color: rgb(28, 28, 28);
+	height: 200px;
+	border-top: 1px solid rgb(120, 120, 120, .2);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 32px;
+	gap: 12px;
+	position: relative;
+}
+
+.footer > div:first-child {
+	font-size: 2rem;
+	font-family: Meddon;
+	opacity: .6;
+}
+
+.footer-items {
+	font-size: .66rem;
+	display: flex;
+	gap: 2.8rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.footer-items a {
+	color: white;
+	text-decoration: none;
+}
+
+.copyright {
+	font-size: .56rem;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	border-top: 1px solid rgb(120, 120, 120, .2);
+}
+
+img {
+	pointer-events: none;
 }

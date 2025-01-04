@@ -48,7 +48,7 @@
 
 .banner {
 	width: 100%;
-	padding: 40px 6%;
+	padding: 72px 6%;
 	padding-top: 56px;
 	display: flex;
 	justify-content: space-between;
@@ -128,6 +128,7 @@
 	z-index: 1;
 	max-height: 400px;
 	position: relative;
+	mask-image: radial-gradient(circle, white 50%, rgb(255, 255, 255, .0) 80%);
 }
 
 .banner-right > img {
@@ -135,13 +136,13 @@
 	position: relative;
 	/*filter: grayscale(80%) hue-rotate( 290deg);*/
 	/*mask-image: linear-gradient(white 60%, transparent);*/
-	mask-image: radial-gradient(white 50%, transparent, white);
+	/*mask-image: radial-gradient(circle, white 50%, rgb(255, 255, 255, .0) 80%);*/
 	pointer-events: none;
 }
 
 .achivements {
 	width: 100%;
-	padding: 32px 6%;
+	padding: 60px 6%;
 	display: flex;
 	justify-content: space-between;
 }

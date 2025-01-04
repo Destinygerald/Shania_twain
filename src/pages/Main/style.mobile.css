@@ -1,7 +1,8 @@
 @media (max-width: 600px) {
 	.main {
-		
+		padding-top: 60px;
 	}
+
 
 	.slider {
 		background-color: rgb(253, 253, 253);
@@ -11,14 +12,14 @@
 		height: 100vh;
 		width: 80vw;
 		box-shadow: 0 0 2px rgb(60, 60, 60, .6);
-		z-index: 1;
+		z-index: 2;
 		top: 0;
 		padding-top: 60px;
 	}
 
 	.slider-exit {
 		position: absolute;
-		right: 20px;
+		right: 40px;
 		top: 20px;
 		font-size: 1.28rem;
 	}
@@ -49,6 +50,7 @@
 	.nav {
 		height: 60px;
 		align-items: center;
+
 	}
 
 	.logo {
@@ -64,11 +66,13 @@
 	.nav-menu {
 		display: flex;
 		align-items: center;
+		z-index: 1;
 	}
 
 	.banner {
 		flex-direction: column;
 		gap: 28px;
+		padding-top: 40px;
 	}
 
 	.banner-left, .banner-right {
@@ -78,7 +82,7 @@
 	}
 
 	.banner-left > div:first-child {
-		font-size: 2.8rem;
+		font-size: 2.6rem;
 		text-align: center;
 		line-height: 3.6rem;
 	}
@@ -149,10 +153,36 @@
 		height: 48px;
 	}
 
+	.footer-contact {
+		padding: 0 8%;
+		width: 100%;
+		gap: 24px;
+	}
+
 	.footer-items {
 		font-size: .55rem;
 		width: 100%;
-		padding: 0 8%;
 		justify-content: space-between;
+		gap: 0;
+	}
+
+	.footer-extras {
+		justify-content: space-between;
+		/*gap: 2rem;*/
+		align-items: flex-start;
+		/*justify-content: center;*/
+		/*background-color: red;*/
+	}
+
+	.footer-extras > div:last-child > span:last-child {
+		text-align: right;
+	}
+
+	*::-webkit-scrollbar {
+		display: none;
+	}
+
+	.footer-items {
+		/*display: none;*/
 	}
 }

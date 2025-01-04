@@ -93,6 +93,12 @@
   font-family: NewRocker;
 }
 
+@font-face {
+  src: url('/fonts/PollerOne/PollerOne-Regular.ttf');
+  font-family: PollerOne;
+}
+
+
 html, body, #root {
   width: 100%;
   min-height: 100vh;

@@ -128,7 +128,7 @@
 	z-index: 1;
 	max-height: 400px;
 	position: relative;
-	mask-image: radial-gradient(circle, white 50%, rgb(255, 255, 255, .0) 80%);
+	mask-image: radial-gradient(circle, white 45%, rgb(255, 255, 255, .0) 80%);
 }
 
 .banner-right > img {
